@@ -178,6 +178,7 @@ Verify the variables `"GEOSERVER_URL"`, `"GEOSERVER_DATA_DIR"`, `"GEOSERVER_LOG"
 Verify the variable `"SITEURL"` in the exchange-settings.sh file to see if it needs to be modified.    
 
     export SITEURL==${SITEURL:-'http://192.168.99.110/'}  # <-- modify this entry
+    export DJANGO_SETTINGS_MODULE=${DJANGO_SETTINGS_MODULE:-'bex.settings'}
 
 Example steps to configure exchange on the same host
 
